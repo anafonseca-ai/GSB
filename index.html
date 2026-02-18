@@ -3,413 +3,237 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Garantia do Zero — Formação em Seguro Garantia para Corretores</title>
-<meta name="description" content="Programa 100% online de formação técnica em Seguro Garantia. Desenvolvido por Ana Fonseca, mais de 25 anos no mercado de seguros.">
-<meta property="og:title" content="Garantia do Zero — Seguro Garantia para Corretores">
-<meta property="og:description" content="Formação técnica estruturada. Primeiro nível do ecossistema Garantia Sem Barreiras.">
+<title>Garantia Sem Barreiras — Especialistas em Seguro Garantia</title>
+<meta name="description" content="Formação, mentoria e consultoria em Seguro Garantia. Mais de 25 anos de experiência transformando carreiras no mercado de seguros. Ana Fonseca.">
+<meta property="og:title" content="Garantia Sem Barreiras — Especialistas em Seguro Garantia">
+<meta property="og:description" content="Formação, mentoria e consultoria em Seguro Garantia para corretores, empresas e órgãos públicos.">
 <meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<meta property="og:url" content="https://www.garantiasembarreiras.com">
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1740294143362104');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1740294143362104&ev=PageView&noscript=1"/></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-65NNVDMH4B"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-65NNVDMH4B');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --bg:#0a0a0a;--bg-alt:#111111;--card:#161616;--card-h:#1a1a1a;
-  --gold:#c4a265;--gold-l:#d4b87a;--gold-d:#a08040;
-  --white:#f0ece4;--text:#e8e4dc;--text-sec:#b0aaa0;--muted:#787068;--dim:#504840;
-  --border:rgba(196,162,101,.12);--green:#5cb87a;--red:#c45050;
-  --serif:'DM Serif Display',Georgia,serif;
-  --sans:'DM Sans',system-ui,sans-serif;
-}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased;font-size:15px}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
+:root{--bg:#0a0a0a;--bg-alt:#111111;--bg-el:#161616;--bg-card:#1a1a1a;--gold:#c4a265;--gold-l:#d4b87a;--gold-d:#a08040;--gold-m:rgba(196,162,101,.5);--gold-s:rgba(196,162,101,.08);--gold-b:rgba(196,162,101,.12);--gold-bh:rgba(196,162,101,.25);--white:#f0ece4;--text:#e8e4dc;--text-s:#b0aaa0;--text-m:#787068;--text-d:#504840;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;--ease:cubic-bezier(.25,.46,.45,.94)}
+html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased;font-weight:300;overflow-x:hidden}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}::selection{background:var(--gold-d);color:var(--bg)}
 
-.section{max-width:820px;margin:0 auto;padding:0 24px}
-.badge{display:inline-block;padding:6px 16px;background:rgba(196,162,101,.08);border:1px solid rgba(196,162,101,.2);border-radius:24px;font-size:11px;color:var(--gold);letter-spacing:2px;font-weight:500;text-transform:uppercase}
-.btn{display:inline-block;padding:15px 38px;background:linear-gradient(135deg,var(--gold),var(--gold-d));color:#0a0a0a;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;transition:all .25s;box-shadow:0 4px 24px rgba(196,162,101,.2);font-family:var(--sans);text-align:center;letter-spacing:.3px}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(196,162,101,.3)}
-.btn-sm{padding:8px 20px;font-size:13px}
-.btn-ghost{background:transparent;color:var(--gold);border:1px solid rgba(196,162,101,.3);box-shadow:none}
-.btn-ghost:hover{background:rgba(196,162,101,.08);box-shadow:none;transform:none}
-.btn-full{width:100%;display:block}
-.text-center{text-align:center}
-.text-gold{color:var(--gold)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--gold-b);transition:all .4s var(--ease)}
+.nav.scrolled{background:rgba(10,10,10,.96);box-shadow:0 1px 40px rgba(0,0,0,.4)}
+.nav-brand{display:flex;align-items:center;gap:12px}.nav-brand img{height:34px;border-radius:2px;opacity:.9}
+.nav-brand-text{font-family:var(--sans);font-size:11px;letter-spacing:4px;color:var(--gold);font-weight:500;text-transform:uppercase}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-links a{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--text-s);font-weight:400;transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease)}
+.nav-links a:hover{color:var(--gold-l)}.nav-links a:hover::after{width:100%}
+.nav-ct{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;padding:10px 24px;border:1px solid var(--gold-b);color:var(--gold);font-weight:500;transition:all .3s var(--ease)}
+.nav-ct:hover{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.nav-mob{display:none;background:none;border:none;cursor:pointer;padding:8px}.nav-mob span{display:block;width:22px;height:1.5px;background:var(--gold);margin:5px 0;transition:all .3s}
 
-/* TOP BAR */
-.topbar{position:sticky;top:0;z-index:100;background:rgba(10,10,10,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;justify-content:space-between;align-items:center}
-.topbar-logo{font-size:11px;letter-spacing:5px;color:var(--gold);font-weight:600}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 48px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(196,162,101,.04) 0%,transparent 60%)}
+.hero::after{content:'';position:absolute;top:0;right:0;bottom:0;width:48%;background:linear-gradient(135deg,var(--bg-alt),var(--bg-el));clip-path:polygon(12% 0,100% 0,100% 100%,0 100%)}
+.hero-c{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.hero-t{max-width:540px}
+.hero-ey{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);font-weight:400;margin-bottom:32px;display:flex;align-items:center;gap:16px}
+.hero-ey::before{content:'';width:40px;height:1px;background:var(--gold)}
+.hero h1{font-family:var(--serif);font-size:clamp(34px,4.2vw,58px);font-weight:400;line-height:1.12;color:var(--white);margin-bottom:28px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-d{font-size:16px;color:var(--text-s);line-height:1.85;font-weight:300;max-width:460px;margin-bottom:40px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero-iw{position:relative;z-index:3;display:flex;justify-content:center}
+.hero-img{width:380px;height:500px;object-fit:cover;object-position:top;box-shadow:24px 24px 0 var(--gold-b)}
+.hero-acc{position:absolute;top:-16px;left:-16px;width:100px;height:100px;border-top:1px solid var(--gold-m);border-left:1px solid var(--gold-m)}
+.hero-ln{position:absolute;bottom:-24px;right:-24px;width:80%;height:1px;background:linear-gradient(90deg,transparent,var(--gold-m),transparent)}
 
-/* HERO */
-.hero{position:relative;padding:100px 24px 80px;text-align:center;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(196,162,101,.06) 0%,transparent 60%)}
-.hero-inner{position:relative;max-width:680px;margin:0 auto}
-.hero-brand{font-size:11px;letter-spacing:6px;color:var(--muted);text-transform:uppercase;font-weight:400;margin-bottom:28px}
-.hero h1{font-family:var(--serif);font-size:clamp(32px,6vw,54px);font-weight:400;line-height:1.1;color:var(--white);margin:24px 0 0}
-.hero h1 .gold{background:linear-gradient(135deg,var(--gold-l),var(--gold),var(--gold-d));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero h1 .sub{display:block;font-family:var(--sans);font-size:clamp(16px,3vw,22px);font-weight:300;color:var(--text-sec);margin-top:12px;letter-spacing:.5px}
-.hero-desc{font-size:16px;color:var(--text-sec);max-width:540px;margin:28px auto 0;line-height:1.8;font-weight:300}
-.hero-cta{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.hero-price{font-size:13px;color:var(--muted);margin-top:14px;font-weight:300}
-.hero-trust{display:flex;gap:32px;justify-content:center;margin-top:32px;flex-wrap:wrap}
-.hero-trust span{font-size:12px;color:var(--muted);font-weight:400;letter-spacing:.5px}
-.hero-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:48px auto 0}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;padding:15px 34px;cursor:pointer;transition:all .35s var(--ease);border:none}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-d));color:var(--bg);box-shadow:0 4px 24px rgba(196,162,101,.18)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(196,162,101,.28)}
+.btn-ghost{background:transparent;color:var(--gold);border:1px solid var(--gold-b)}
+.btn-ghost:hover{border-color:var(--gold);background:var(--gold-s)}
+.btn-arrow::after{content:'\2192';margin-left:4px;transition:margin-left .3s}.btn-arrow:hover::after{margin-left:10px}
 
-/* SECTIONS */
-.sec-dark{background:var(--bg-alt);padding:72px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.sec-light{padding:72px 24px}
-.sec-title{font-family:var(--serif);font-size:26px;font-weight:400;margin:0 0 6px;color:var(--white)}
-.sec-subtitle{font-size:14px;color:var(--muted);margin:8px 0 0;font-weight:300;letter-spacing:.3px}
-.sec-accent{width:32px;height:2px;background:var(--gold);margin:0 auto 16px}
+.section{padding:120px 48px}.section-alt{background:var(--bg-alt)}
+.container{max-width:1120px;margin:0 auto}
+.s-ey{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);font-weight:400;margin-bottom:16px;display:flex;align-items:center;gap:16px}
+.s-ey::before{content:'';width:32px;height:1px;background:var(--gold)}
+.s-tt{font-family:var(--serif);font-size:clamp(26px,3.2vw,44px);font-weight:400;line-height:1.15;color:var(--white);margin-bottom:20px}
+.s-tt em{font-style:italic;color:var(--gold)}
+.s-desc{font-size:15px;color:var(--text-s);line-height:1.85;font-weight:300;max-width:540px;margin-bottom:48px}
 
-/* CENÁRIOS */
-.scenario-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:640px;margin:0 auto}
-.scenario-card{padding:20px;background:var(--card);border:1px solid var(--border);border-radius:10px;display:flex;gap:12px;align-items:flex-start;transition:all .2s}
-.scenario-card:hover{border-color:rgba(196,162,101,.3);background:var(--card-h)}
-.scenario-icon{width:28px;height:28px;border-radius:50%;background:rgba(196,80,80,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px;color:var(--red);font-weight:600}
-.scenario-text{font-size:13px;color:var(--text-sec);line-height:1.6;font-weight:400}
-.scenario-lead{text-align:center;margin-top:32px;font-size:16px;color:var(--gold);font-weight:400;font-family:var(--serif)}
+.creds{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gold-b);border:1px solid var(--gold-b);margin:0 48px;position:relative;z-index:4;margin-top:-40px}
+.cred{background:var(--bg-el);padding:40px 28px;text-align:center;transition:background .3s}.cred:hover{background:var(--bg-card)}
+.cred-n{font-family:var(--serif);font-size:40px;font-weight:400;color:var(--gold);line-height:1;margin-bottom:8px}
+.cred-l{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--text-m);font-weight:400}
 
-/* MÓDULOS */
-.mod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.mod-card{padding:28px;background:var(--card);border:1px solid var(--border);border-radius:12px;position:relative;overflow:hidden;transition:all .25s}
-.mod-card:hover{border-color:rgba(196,162,101,.3)}
-.mod-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .25s}
-.mod-card:hover::before{opacity:1}
-.mod-num{font-size:10px;font-weight:600;color:var(--gold);letter-spacing:3px;margin-bottom:12px;text-transform:uppercase}
-.mod-card h3{font-family:var(--serif);font-size:16px;font-weight:400;color:var(--white);margin:0 0 8px}
-.mod-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.6;font-weight:300}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pillar{padding:44px 32px;background:var(--bg-el);border:1px solid var(--gold-b);position:relative;transition:all .4s var(--ease);overflow:hidden}
+.pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold-l),var(--gold-d));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.pillar:hover::before{transform:scaleX(1)}.pillar:hover{border-color:var(--gold-bh);box-shadow:0 16px 60px rgba(0,0,0,.3)}
+.pillar-n{font-family:var(--serif);font-size:48px;font-weight:400;color:var(--text-d);line-height:1;margin-bottom:20px;transition:color .3s}
+.pillar:hover .pillar-n{color:var(--gold-m)}
+.pillar h3{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--white);margin-bottom:12px}
+.pillar p{font-size:14px;color:var(--text-s);line-height:1.75;margin-bottom:24px}
+.pillar-lk{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:500;display:inline-flex;align-items:center;gap:6px;transition:gap .3s}
+.pillar-lk:hover{gap:12px}.pillar-lk::after{content:'\2192'}
 
-/* ABOUT */
-.about-wrap{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:center}
-.about-img{width:280px;height:340px;border-radius:12px;overflow:hidden;background:var(--card);border:1px solid var(--border);position:relative}
-.about-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,10,10,.3) 100%)}
-.about-img img{width:100%;height:100%;object-fit:cover}
-.about-name{font-family:var(--serif);font-size:24px;font-weight:400;color:var(--white);margin:0 0 4px}
-.about-role{font-size:11px;color:var(--gold);letter-spacing:2px;font-weight:500;text-transform:uppercase;margin-bottom:20px}
-.about-stat-row{display:flex;gap:24px;margin-top:20px;padding-top:20px;border-top:1px solid var(--border)}
-.about-stat{text-align:left}
-.about-stat-val{font-family:var(--serif);font-size:22px;color:var(--gold);line-height:1}
-.about-stat-label{font-size:11px;color:var(--muted);margin-top:4px;font-weight:400}
+.about-g{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:center}
+.about-iw{position:relative}.about-img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top}
+.about-if{position:absolute;bottom:-12px;right:-12px;width:100%;height:100%;border:1px solid var(--gold-b);z-index:-1}
+.about-ey{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);font-weight:400;margin-bottom:12px}
+.about-nm{font-family:var(--serif);font-size:clamp(28px,3vw,40px);font-weight:400;color:var(--white);margin-bottom:8px}
+.about-rl{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--gold);font-style:italic;margin-bottom:24px}
+.about-bio{font-size:15px;color:var(--text-s);line-height:1.85}.about-bio+.about-bio{margin-top:16px}
+.about-q{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--white);line-height:1.6;font-style:italic;padding-left:24px;border-left:2px solid var(--gold);margin:32px 0}
 
-/* FOR WHO */
-.forwho-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.forwho-box{padding:28px;background:var(--card);border:1px solid var(--border);border-radius:12px}
-.forwho-label{font-size:11px;font-weight:600;letter-spacing:2px;margin-bottom:18px;text-transform:uppercase}
-.forwho-label.yes{color:var(--green)}
-.forwho-label.no{color:var(--red)}
-.forwho-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
-.forwho-item:last-child{margin-bottom:0}
-.forwho-dot{width:6px;height:6px;border-radius:50%;margin-top:7px;flex-shrink:0}
-.forwho-dot.yes{background:var(--green)}
-.forwho-dot.no{background:var(--red)}
-.forwho-item .desc{font-size:13px;color:var(--text-sec);line-height:1.6;font-weight:400}
+.progs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.prog{padding:40px 36px;background:var(--bg-el);border:1px solid var(--gold-b);transition:all .4s var(--ease);display:flex;flex-direction:column}
+.prog:hover{border-color:var(--gold-bh);box-shadow:0 12px 48px rgba(0,0,0,.3)}
+.prog-badge{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:400;margin-bottom:16px}
+.prog h3{font-family:var(--serif);font-size:24px;font-weight:400;color:var(--white);margin-bottom:12px}
+.prog-desc{font-size:14px;color:var(--text-s);line-height:1.75;flex:1;margin-bottom:24px}
+.prog-ft{display:flex;align-items:center;justify-content:space-between;padding-top:24px;border-top:1px solid var(--gold-b)}
+.prog-pr{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--gold)}
+.prog-pr small{font-size:11px;color:var(--text-m);font-weight:300;font-family:var(--sans);display:block;margin-top:2px}
+.prog-cta{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:500;padding:10px 20px;border:1px solid var(--gold-b);transition:all .3s}
+.prog-cta:hover{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.prog-soon{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--text-d)}
 
-/* FAQ */
-.faq-list{max-width:600px;margin:0 auto}
-.faq-item{border-bottom:1px solid var(--border)}
-.faq-q{width:100%;padding:18px 0;background:none;border:none;color:var(--white);font-size:14px;font-weight:500;cursor:pointer;text-align:left;display:flex;justify-content:space-between;align-items:center;font-family:var(--sans);line-height:1.5}
-.faq-q:hover{color:var(--gold)}
-.faq-plus{color:var(--gold);font-size:16px;flex-shrink:0;margin-left:16px;transition:transform .2s}
-.faq-a{font-size:13px;color:var(--muted);line-height:1.7;padding:0 28px 18px 0;display:none;font-weight:300}
-.faq-item.open .faq-a{display:block}
-.faq-item.open .faq-plus{transform:rotate(45deg)}
+.cta-sec{text-align:center;padding:100px 48px;background:linear-gradient(180deg,var(--bg-alt),var(--bg));position:relative}
+.cta-sec::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:60px;background:linear-gradient(180deg,var(--gold-b),transparent)}
+.cta-sec .s-ey{justify-content:center}.cta-sec .s-ey::before{display:none}
+.cta-sec .s-tt,.cta-sec .s-desc{text-align:center;margin-left:auto;margin-right:auto;max-width:600px}
+.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
-/* CTA BOX */
-.cta-box{max-width:460px;margin:0 auto;padding:40px 32px;background:var(--card);border:1px solid var(--border);border-radius:16px;position:relative;overflow:hidden;text-align:center}
-.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold-d),var(--gold),var(--gold-d))}
-.cta-label{font-size:11px;color:var(--gold);letter-spacing:3px;font-weight:500;margin-bottom:10px;text-transform:uppercase}
-.cta-old{font-size:14px;color:var(--dim);text-decoration:line-through}
-.cta-price{font-family:var(--serif);font-size:42px;font-weight:400;color:var(--white);line-height:1;margin:6px 0}
-.cta-price .currency{font-size:22px;color:var(--gold)}
-.cta-sub{font-size:13px;color:var(--muted);margin:8px 0 28px;font-weight:300}
-.cta-trust{display:flex;justify-content:center;gap:24px;margin-top:24px;flex-wrap:wrap}
-.cta-trust span{font-size:11px;color:var(--muted);font-weight:400}
-.cta-upgrade{max-width:460px;margin:20px auto 0;padding:20px;text-align:center;background:rgba(196,162,101,.03);border:1px solid var(--border);border-radius:12px}
-.cta-upgrade p{font-size:13px;color:var(--muted);line-height:1.6;font-weight:300}
+.footer{background:var(--bg);padding:64px 48px 40px;border-top:1px solid var(--gold-b)}
+.footer-in{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:64px}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:16px}.footer-brand img{height:28px;opacity:.7}
+.footer-bt{font-size:10px;letter-spacing:3px;color:var(--text-d);text-transform:uppercase}
+.footer-tl{font-size:13px;color:var(--text-d);line-height:1.7;max-width:300px}
+.footer-hd{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-m);font-weight:500;margin-bottom:20px}
+.footer-lk{list-style:none}.footer-lk li{margin-bottom:10px}.footer-lk a{font-size:13px;color:var(--text-m);transition:color .3s}.footer-lk a:hover{color:var(--gold)}
+.footer-bot{max-width:1120px;margin:40px auto 0;padding-top:24px;border-top:1px solid rgba(196,162,101,.06);display:flex;justify-content:space-between;align-items:center}
+.footer-cp{font-size:11px;color:var(--text-d);letter-spacing:1px}
+.footer-soc{display:flex;gap:20px}.footer-soc a{font-size:11px;color:var(--text-m);letter-spacing:1px;transition:color .3s;text-transform:uppercase}.footer-soc a:hover{color:var(--gold)}
 
-/* FOOTER */
-.footer{padding:48px 24px;border-top:1px solid var(--border);text-align:center}
-.footer-brand{font-size:11px;letter-spacing:5px;color:var(--gold);font-weight:500;margin-bottom:8px}
-.footer-copy{font-size:11px;color:var(--dim);font-weight:300}
-.footer-links{display:flex;justify-content:center;gap:20px;margin-top:12px}
-.footer-links a{font-size:11px;color:var(--dim);font-weight:400}
-.footer-links a:hover{color:var(--gold)}
+.reveal{opacity:0;transform:translateY(28px);transition:all .7s var(--ease)}.reveal.visible{opacity:1;transform:translateY(0)}
+.rv1{transition-delay:.12s}.rv2{transition-delay:.24s}
 
-/* FLOAT */
-.float-bar{position:fixed;bottom:0;left:0;right:0;z-index:999;background:rgba(10,10,10,.94);backdrop-filter:blur(16px);border-top:1px solid var(--border);padding:12px 24px;display:flex;justify-content:center;align-items:center;gap:16px;transform:translateY(100%);transition:transform .3s}
-.float-bar.show{transform:translateY(0)}
-.float-bar .price{font-family:var(--serif);font-size:18px;color:var(--gold)}
-
-/* RESPONSIVE */
-@media(max-width:700px){
-  .hero{padding:60px 16px 48px}
-  .sec-dark,.sec-light{padding:48px 16px}
-  .scenario-grid{grid-template-columns:1fr}
-  .about-wrap{grid-template-columns:1fr;text-align:center}
-  .about-img{width:200px;height:250px;margin:0 auto}
-  .about-stat-row{justify-content:center}
-  .cta-box{padding:28px 20px}
-  .topbar{padding:10px 16px}
-}
+@media(max-width:1024px){.hero-c{grid-template-columns:1fr;gap:48px;text-align:center}.hero-t{max-width:100%}.hero-d{margin-left:auto;margin-right:auto}.hero-ctas{justify-content:center}.hero::after{width:100%;clip-path:none;opacity:.4}.hero-img{width:300px;height:400px}.hero-ey{justify-content:center}.creds{grid-template-columns:repeat(2,1fr);margin:0 24px;margin-top:-30px}.pillars{grid-template-columns:1fr}.about-g{grid-template-columns:1fr;gap:48px}.about-iw{max-width:380px;margin:0 auto}.progs{grid-template-columns:1fr}.footer-in{grid-template-columns:1fr;gap:40px}}
+@media(max-width:768px){.nav{padding:0 24px;height:64px}.nav-links{display:none}.nav-mob{display:block}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:64px;left:0;right:0;bottom:0;background:rgba(10,10,10,.98);padding:48px 24px;gap:24px;z-index:999}.hero{padding:100px 24px 60px;min-height:auto}.hero-img{width:260px;height:340px}.hero-acc,.hero-ln{display:none}.section{padding:80px 24px}.creds{grid-template-columns:1fr 1fr;margin:0 24px;margin-top:-24px}.cred{padding:28px 20px}.cred-n{font-size:32px}.footer{padding:48px 24px 32px}.footer-bot{flex-direction:column;gap:16px;text-align:center}.cta-sec{padding:80px 24px}}
+@media(max-width:480px){.hero h1{font-size:30px}.hero-ctas{flex-direction:column;align-items:stretch}.btn{width:100%;justify-content:center}.creds{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<nav class="nav" id="nav">
+  <a href="/" class="nav-brand"><img src="logo-gsb.jpg" alt="GSB"><span class="nav-brand-text">Garantia Sem Barreiras</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#programas">Programas</a>
+    <a href="#contato" class="nav-ct">Contato</a>
+  </div>
+  <button class="nav-mob" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
 
-<script>
-const CONFIG = {
-  greennCheckoutURL: "https://payfast.greenn.com.br/127444",
-  whatsappNumber: "5511989419243",
-  whatsappMsg: "Olá! Gostaria de saber mais sobre o Garantia do Zero.",
-  mentoriaURL: "https://wa.me/5511989419243?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Mentoria%20Garantia%20Sem%20Barreiras."
-};
-</script>
+<section class="hero">
+  <div class="hero-c">
+    <div class="hero-t">
+      <div class="hero-ey">Seguro Garantia · Desde 1999</div>
+      <h1>Onde a <em>expertise</em> encontra a formação que o mercado exige</h1>
+      <p class="hero-d">Formação técnica, mentoria especializada e consultoria em Seguro Garantia. Mais de 25 anos construindo competência no ramo que mais cresce no mercado segurador brasileiro.</p>
+      <div class="hero-ctas">
+        <a href="#programas" class="btn btn-gold btn-arrow">Conheça nossos programas</a>
+        <a href="#contato" class="btn btn-ghost">Fale conosco</a>
+      </div>
+    </div>
+    <div class="hero-iw">
+      <div class="hero-acc"></div>
+      <img src="ana-hero.jpg" alt="Ana Fonseca — Especialista em Seguro Garantia" class="hero-img">
+      <div class="hero-ln"></div>
+    </div>
+  </div>
+</section>
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="topbar-logo">GARANTIA DO ZERO</div>
-  <a href="#investimento" class="btn btn-sm">Quero Participar</a>
+<div class="creds reveal">
+  <div class="cred"><div class="cred-n">25+</div><div class="cred-l">Anos de Mercado</div></div>
+  <div class="cred"><div class="cred-n">10+</div><div class="cred-l">Turmas Realizadas</div></div>
+  <div class="cred"><div class="cred-n">100+</div><div class="cred-l">Profissionais Formados</div></div>
+  <div class="cred"><div class="cred-n">2</div><div class="cred-l">Décadas de Resultados</div></div>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-brand">Garantia sem Barreiras</div>
-    <span class="badge">Formação Técnica em Seguro Garantia</span>
-    <h1>
-      <span class="gold">Seguro Garantia</span> do Zero
-      <span class="sub">Base técnica sólida para corretores que querem ir além</span>
-    </h1>
-    <p class="hero-desc">
-      Programa 100% online, estruturado como o primeiro nível de formação para corretores que desejam ingressar no Seguro Garantia com clareza conceitual e direcionamento profissional.
-    </p>
-    <div class="hero-cta">
-      <a href="https://payfast.greenn.com.br/127444" target="_blank" class="btn">Quero Começar</a>
-      <a href="#programa" class="btn btn-ghost">Conhecer o Programa</a>
-    </div>
-    <p class="hero-price">R$ 247,50 à vista | PIX, Cartão, Boleto ou PayPal | ou 12x de R$ 25,45</p>
-    <div class="hero-trust">
-      <span>Acesso imediato</span>
-      <span>100% online</span>
-      <span>7 dias de garantia</span>
-    </div>
-    <div class="hero-divider"></div>
-  </div>
-</section>
-
-<!-- VÍDEO -->
-<section style="padding:0 24px 48px;background:var(--bg)">
-  <div style="max-width:680px;margin:0 auto">
-    <video controls playsinline preload="metadata" poster="" style="width:100%;border-radius:12px;border:1px solid var(--border);background:#000">
-      <source src="video-gdz.mp4" type="video/mp4">
-    </video>
-    <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:12px;font-weight:300">Ana Fonseca explica o programa Garantia do Zero</p>
-  </div>
-</section>
-
-<!-- CENÁRIOS -->
-<section class="sec-dark">
-  <div class="section">
-    <div class="text-center" style="margin-bottom:40px">
-      <div class="sec-accent"></div>
-      <h2 class="sec-title">Você se identifica com algum desses cenários?</h2>
-    </div>
-    <div class="scenario-grid">
-      <div class="scenario-card">
-        <div class="scenario-icon">&mdash;</div>
-        <span class="scenario-text">Corretora concentrada em ramos tradicionais, com margens progressivamente reduzidas</span>
-      </div>
-      <div class="scenario-card">
-        <div class="scenario-icon">&mdash;</div>
-        <span class="scenario-text">Elevada demanda de sinistros consumindo tempo operacional e desgastando a relação com clientes</span>
-      </div>
-      <div class="scenario-card">
-        <div class="scenario-icon">&mdash;</div>
-        <span class="scenario-text">Reconhece o potencial do Seguro Garantia, mas não estruturou uma entrada segura nesse mercado</span>
-      </div>
-      <div class="scenario-card">
-        <div class="scenario-icon">&mdash;</div>
-        <span class="scenario-text">Prefere não ofertar o produto por falta de domínio técnico aprofundado</span>
-      </div>
-      <div class="scenario-card">
-        <div class="scenario-icon">&mdash;</div>
-        <span class="scenario-text">Não encontrou formação clara, objetiva e aplicada à realidade do corretor PJ</span>
-      </div>
-      <div class="scenario-card">
-        <div class="scenario-icon">&mdash;</div>
-        <span class="scenario-text">Concorrentes ampliando portfólio enquanto sua operação permanece estagnada</span>
-      </div>
-    </div>
-    <p class="scenario-lead">O Garantia do Zero foi desenvolvido para mudar esse cenário.</p>
-  </div>
-</section>
-
-<!-- O PROGRAMA -->
-<section class="sec-light" id="programa">
-  <div class="section">
-    <div class="text-center" style="margin-bottom:40px">
-      <div class="sec-accent"></div>
-      <h2 class="sec-title">O que você vai aprender</h2>
-      <p class="sec-subtitle">Quatro módulos estruturados pelo Método BASE</p>
-    </div>
-    <div class="mod-grid">
-      <div class="mod-card"><div class="mod-num">Módulo 01</div><h3>Base — Fundamentos</h3><p>Conceitos do Seguro Garantia, modalidades, players do mercado e o papel estratégico do corretor.</p></div>
-      <div class="mod-card"><div class="mod-num">Módulo 02</div><h3>Ação — Primeira Operação</h3><p>Da identificação do cliente à emissão da apólice. Documentação, análise de risco e montagem de proposta.</p></div>
-      <div class="mod-card"><div class="mod-num">Módulo 03</div><h3>Sistema — Processos</h3><p>Pipeline de vendas, gestão de carteira, renovações e fluxo operacional para atuação recorrente.</p></div>
-      <div class="mod-card"><div class="mod-num">Módulo 04</div><h3>Escala — Crescimento</h3><p>Prospecção ativa, parcerias estratégicas e expansão consistente da carteira de Seguro Garantia.</p></div>
+<section class="section section-alt" id="atuacao">
+  <div class="container">
+    <div class="s-ey reveal">O que fazemos</div>
+    <h2 class="s-tt reveal">Três pilares de <em>excelência</em></h2>
+    <p class="s-desc reveal">Atuamos na interseção entre formação técnica, acompanhamento estratégico e consultoria especializada — preparando profissionais e organizações para operar com segurança no Seguro Garantia.</p>
+    <div class="pillars">
+      <div class="pillar reveal"><div class="pillar-n">01</div><h3>Formação</h3><p>Programas estruturados que levam o profissional do conceito à prática. Da introdução ao produto até a emissão da primeira apólice — com materiais técnicos, exercícios reais e acompanhamento.</p><a href="#programas" class="pillar-lk">Ver programas</a></div>
+      <div class="pillar reveal rv1"><div class="pillar-n">02</div><h3>Mentoria</h3><p>Acompanhamento estratégico para corretores que buscam diversificar sua carteira e dominar o Seguro Garantia com consistência. Diagnóstico, plano de ação e execução assistida.</p><a href="#programas" class="pillar-lk">Saiba mais</a></div>
+      <div class="pillar reveal rv2"><div class="pillar-n">03</div><h3>Consultoria</h3><p>Assessoria técnica para empresas, corretoras e órgãos públicos que necessitam de expertise em licitações, sinistros e gestão de garantias. Sob demanda, com profundidade.</p><a href="#contato" class="pillar-lk">Entre em contato</a></div>
     </div>
   </div>
 </section>
 
-<!-- SOBRE ANA -->
-<section class="sec-dark">
-  <div class="section">
-    <div class="about-wrap">
-      <div class="about-img">
-        <img src="ana-fonseca.jpg" alt="Ana Fonseca — Especialista em Seguro Garantia">
-      </div>
-      <div>
-        <span class="badge">Sobre a Mentora</span>
-        <h2 class="about-name" style="margin-top:16px">Ana Fonseca</h2>
-        <div class="about-role">Especialista em Seguro Garantia</div>
-        <p style="font-size:14px;color:var(--text-sec);line-height:1.8;margin-bottom:14px;font-weight:300">
-          Atua há mais de 25 anos no mercado de seguros, com foco em operações estruturadas e soluções estratégicas para empresas.
-        </p>
-        <p style="font-size:14px;color:var(--text-sec);line-height:1.8;margin-bottom:14px;font-weight:300">
-          Criadora do Programa Garantia Sem Barreiras, desenvolveu um ecossistema de formação voltado a corretores que desejam ampliar portfólio, elevar ticket médio e atuar com segurança técnica.
-        </p>
-        <p style="font-size:13px;color:var(--muted);line-height:1.7;font-weight:300">
-          O Garantia do Zero representa o primeiro passo dessa formação — direcionado a profissionais que querem iniciar no Seguro Garantia com base sólida e visão empresarial.
-        </p>
-        <div class="about-stat-row">
-          <div class="about-stat">
-            <div class="about-stat-val">25+</div>
-            <div class="about-stat-label">anos de mercado</div>
-          </div>
-          <div class="about-stat">
-            <div class="about-stat-val">11</div>
-            <div class="about-stat-label">anos em Seg. Garantia</div>
-          </div>
-        </div>
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="about-g">
+      <div class="about-iw reveal"><img src="ana-about.jpg" alt="Ana Fonseca" class="about-img"><div class="about-if"></div></div>
+      <div class="reveal rv1">
+        <div class="about-ey">Quem lidera</div>
+        <div class="about-nm">Ana Fonseca</div>
+        <div class="about-rl">Especialista em Seguro Garantia</div>
+        <p class="about-bio">Com mais de 25 anos dedicados ao mercado de seguros, Ana Fonseca construiu uma trajetória que combina profundidade técnica com visão estratégica de negócios. Especialista no ramo de Seguro Garantia — o produto que mais cresce no setor segurador brasileiro — tornou-se referência na formação de profissionais que buscam operar com excelência neste segmento.</p>
+        <p class="about-bio">Fundadora do programa Garantia Sem Barreiras, já formou dezenas de profissionais em suas turmas de mentoria, combinando rigor técnico regulatório com uma abordagem prática que gera resultados concretos. Sua atuação se estende à consultoria para empresas e instituições que necessitam de orientação especializada em licitações, sinistros e gestão de garantias.</p>
+        <blockquote class="about-q">"O Seguro Garantia não é apenas um produto — é uma competência estratégica. E todo corretor sério precisa dominá-la."</blockquote>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PARA QUEM É -->
-<section class="sec-light">
-  <div class="section">
-    <div class="text-center" style="margin-bottom:40px">
-      <div class="sec-accent"></div>
-      <h2 class="sec-title">Para quem é este programa</h2>
-    </div>
-    <div class="forwho-grid">
-      <div class="forwho-box">
-        <div class="forwho-label yes">Este programa é para você se:</div>
-        <div class="forwho-item"><span class="forwho-dot yes"></span><span class="desc">Atua no mercado de seguros ou em áreas relacionadas e deseja estruturar uma compreensão técnica sólida sobre Seguro Garantia</span></div>
-        <div class="forwho-item"><span class="forwho-dot yes"></span><span class="desc">Quer compreender o Seguro Garantia antes de oferecê-lo ou analisá-lo profissionalmente</span></div>
-        <div class="forwho-item"><span class="forwho-dot yes"></span><span class="desc">Valoriza formação técnica antes de assumir responsabilidades maiores</span></div>
-        <div class="forwho-item"><span class="forwho-dot yes"></span><span class="desc">Deseja iniciar nesse segmento com base estruturada, sem improvisação</span></div>
-      </div>
-      <div class="forwho-box">
-        <div class="forwho-label no">Não é para você se:</div>
-        <div class="forwho-item"><span class="forwho-dot no"></span><span class="desc">Busca apenas curiosidade sobre o produto, sem intenção real de aplicação profissional</span></div>
-        <div class="forwho-item"><span class="forwho-dot no"></span><span class="desc">Espera dominar um novo segmento sem dedicação prática</span></div>
-        <div class="forwho-item"><span class="forwho-dot no"></span><span class="desc">Já possui atuação consolidada e domínio avançado em Seguro Garantia</span></div>
-      </div>
+<section class="section section-alt" id="programas">
+  <div class="container">
+    <div class="s-ey reveal">Programas</div>
+    <h2 class="s-tt reveal">Formação para cada <em>estágio</em> da sua carreira</h2>
+    <p class="s-desc reveal">Do primeiro contato com o Seguro Garantia até a consultoria em grandes operações — há um caminho desenhado para a sua evolução profissional.</p>
+    <div class="progs">
+      <div class="prog reveal"><div class="prog-badge">Formação · Perpétuo</div><h3>Garantia do Zero</h3><p class="prog-desc">Programa online e estruturado para corretores que querem entrar no mercado de Seguro Garantia com base técnica sólida. 4 módulos completos, materiais técnicos e acesso permanente ao conteúdo.</p><div class="prog-ft"><div class="prog-pr">R$ 247,50<small>à vista ou 12x de R$ 25,45</small></div><a href="/zero" class="prog-cta" onclick="fbq('track','ViewContent',{content_name:'GDZ'});gtag('event','select_content',{content_type:'program',item_id:'GDZ'})">Conhecer →</a></div></div>
+      <div class="prog reveal rv1"><div class="prog-badge">Mentoria · 6 meses</div><h3>Garantia Sem Barreiras</h3><p class="prog-desc">Programa completo de mentoria com Ana Fonseca. Diagnóstico personalizado, plano de ação, encontros estratégicos, acesso aos 4 módulos técnicos e acompanhamento contínuo para implementação.</p><div class="prog-ft"><div class="prog-pr">R$ 10.500<small>investimento único</small></div><a href="/mentoria" class="prog-cta" onclick="fbq('track','ViewContent',{content_name:'Mentoria'});gtag('event','select_content',{content_type:'program',item_id:'Mentoria'})">Saiba mais →</a></div></div>
+      <div class="prog reveal"><div class="prog-badge">Módulo avulso · Em breve</div><h3>Gestão de Sinistro</h3><p class="prog-desc">Formação técnica focada no fluxo completo de sinistro em Seguro Garantia — da abertura ao encerramento. Para profissionais que já operam no ramo e precisam dominar a gestão de sinistros com segurança.</p><div class="prog-ft"><span class="prog-soon">Em desenvolvimento</span></div></div>
+      <div class="prog reveal rv1"><div class="prog-badge">Sob demanda</div><h3>Consultoria Especializada</h3><p class="prog-desc">Assessoria técnica para empresas, corretoras de grande porte e órgãos públicos. Diagnóstico de operações, capacitação de equipes, pareceres técnicos e acompanhamento de processos licitatórios envolvendo garantias.</p><div class="prog-ft"><div class="prog-pr">Sob consulta<small>escopo personalizado</small></div><a href="#contato" class="prog-cta" onclick="fbq('track','ViewContent',{content_name:'Consultoria'});gtag('event','select_content',{content_type:'program',item_id:'Consultoria'})">Solicitar →</a></div></div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="sec-dark">
-  <div class="section">
-    <div class="text-center" style="margin-bottom:40px">
-      <div class="sec-accent"></div>
-      <h2 class="sec-title">Perguntas Frequentes</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Preciso ser corretor de seguros habilitado?<span class="faq-plus">+</span></button>
-        <div class="faq-a">Não necessariamente. O programa é indicado para corretores, prepostos e profissionais de áreas correlatas que desejam compreender o Seguro Garantia com profundidade técnica.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Por quanto tempo tenho acesso ao conteúdo?<span class="faq-plus">+</span></button>
-        <div class="faq-a">O acesso é vitalício. Você pode acessar o material quantas vezes quiser, no seu ritmo.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">O programa inclui encontros ao vivo?<span class="faq-plus">+</span></button>
-        <div class="faq-a">Não. O Garantia do Zero é 100% gravado e estruturado para estudo autônomo. Encontros ao vivo e acompanhamento direto fazem parte da Mentoria Garantia Sem Barreiras, o próximo nível da formação.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Qual a política de reembolso?<span class="faq-plus">+</span></button>
-        <div class="faq-a">Você tem 7 dias de garantia incondicional a partir da data de compra. Se o programa não atender suas expectativas, o reembolso é integral.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Posso migrar para a Mentoria depois?<span class="faq-plus">+</span></button>
-        <div class="faq-a">Sim. O Garantia do Zero é o primeiro nível do ecossistema Garantia Sem Barreiras. O valor investido neste programa pode ser abatido na Mentoria com acompanhamento direto de Ana Fonseca.</div>
-      </div>
+<section class="cta-sec" id="contato">
+  <div class="container">
+    <div class="s-ey">Próximo passo</div>
+    <h2 class="s-tt">Pronto para dominar o <em>Seguro Garantia</em>?</h2>
+    <p class="s-desc">Seja você um corretor em busca de formação, uma empresa que precisa de consultoria ou um profissional querendo evoluir — estamos aqui para orientar.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/5511989419243?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Garantia%20Sem%20Barreiras%20e%20gostaria%20de%20saber%20mais." class="btn btn-gold btn-arrow" onclick="fbq('track','Contact');gtag('event','generate_lead',{event_category:'whatsapp'})">Fale pelo WhatsApp</a>
+      <a href="mailto:ana.fonseca@garantiasembarreiras.com" class="btn btn-ghost">Enviar e-mail</a>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="sec-light" id="investimento">
-  <div class="section" style="padding-top:24px;padding-bottom:24px">
-    <div class="cta-box">
-      <div class="cta-label">Investimento</div>
-      <div class="cta-old">R$ 497</div>
-      <div class="cta-price"><span class="currency">R$</span> 247,50</div>
-      <p class="cta-sub">ou 12x de R$ 25,45 no cartão</p>
-      <a href="#" id="cta-main-btn" class="btn btn-full">Quero Participar</a>
-      <div class="cta-trust">
-        <span>Compra segura</span>
-        <span>7 dias de garantia</span>
-        <span>Acesso imediato</span>
-      </div>
-    </div>
-    <div class="cta-upgrade">
-      <p>Deseja acompanhamento direto com Ana Fonseca?<br><a href="#" id="mentoria-link" style="color:var(--gold);font-weight:500">Conheça a Mentoria Garantia Sem Barreiras &rarr;</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer class="footer">
-  <div class="footer-brand">GARANTIA SEM BARREIRAS</div>
-  <p class="footer-copy">Garantia Sem Barreiras &mdash; Todos os direitos reservados &copy; 2025–2026</p>
-  <div class="footer-links">
-    <a href="#">Termos de Uso</a>
-    <a href="#">Política de Privacidade</a>
-    <a href="https://wa.me/5511989419243?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Mentoria%20Garantia%20Sem%20Barreiras." style="color:var(--gold)">Contato</a>
+  <div class="footer-in">
+    <div><div class="footer-brand"><img src="logo-gsb.jpg" alt="GSB"><span class="footer-bt">Garantia Sem Barreiras</span></div><p class="footer-tl">Formação, mentoria e consultoria em Seguro Garantia. Construindo competência técnica e excelência profissional desde 1999.</p></div>
+    <div><div class="footer-hd">Programas</div><ul class="footer-lk"><li><a href="/zero">Garantia do Zero</a></li><li><a href="/mentoria">Mentoria Premium</a></li><li><a href="#programas">Gestão de Sinistro</a></li><li><a href="#contato">Consultoria</a></li></ul></div>
+    <div><div class="footer-hd">Contato</div><ul class="footer-lk"><li><a href="mailto:ana.fonseca@garantiasembarreiras.com">ana.fonseca@garantiasembarreiras.com</a></li><li><a href="https://wa.me/5511989419243">WhatsApp</a></li><li><a href="https://www.instagram.com/anafonseca.garantia/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
   </div>
+  <div class="footer-bot"><span class="footer-cp">© 2026 Garantia Sem Barreiras · Ana Fonseca. Todos os direitos reservados.</span><div class="footer-soc"><a href="https://www.instagram.com/anafonseca.garantia/" target="_blank" rel="noopener">Instagram</a></div></div>
 </footer>
 
-<!-- FLOAT BAR -->
-<div class="float-bar" id="floatBar">
-  <span class="price">R$ 247,50</span>
-  <a href="#investimento" class="btn btn-sm">Quero Participar</a>
-</div>
-
 <script>
-document.getElementById('cta-main-btn').href = CONFIG.greennCheckoutURL;
-document.getElementById('mentoria-link').href = CONFIG.mentoriaURL;
-const waURL = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMsg)}`;
-
-document.querySelector('.topbar .btn').addEventListener('click', function(e) {
-  e.preventDefault();
-  if (CONFIG.greennCheckoutURL.startsWith('#')) {
-    document.getElementById('investimento').scrollIntoView({ behavior: 'smooth' });
-  } else {
-    window.open(CONFIG.greennCheckoutURL, '_blank');
-  }
-});
-
-const floatBar = document.getElementById('floatBar');
-window.addEventListener('scroll', function() {
-  floatBar.classList.toggle('show', window.scrollY > 500);
-});
+const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
+const tgl=document.getElementById('navToggle'),lks=document.getElementById('navLinks');
+tgl.addEventListener('click',()=>{lks.classList.toggle('open');const s=tgl.querySelectorAll('span');if(lks.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)'}else{s.forEach(x=>{x.style.transform='';x.style.opacity=''})}});
+lks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{lks.classList.remove('open');tgl.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity=''})}));
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+document.querySelectorAll('a[href^="http"]').forEach(a=>a.addEventListener('click',()=>{gtag('event','click',{event_category:'outbound',event_label:a.href})}));
 </script>
-
 </body>
 </html>
