@@ -197,6 +197,16 @@ const CONFIG = {
   </div>
 </section>
 
+<!-- VÍDEO -->
+<section style="padding:0 24px 48px;background:var(--bg)">
+  <div style="max-width:680px;margin:0 auto">
+    <video controls playsinline preload="metadata" poster="" style="width:100%;border-radius:12px;border:1px solid var(--border);background:#000">
+      <source src="video-gdz.mp4" type="video/mp4">
+    </video>
+    <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:12px;font-weight:300">Ana Fonseca explica o programa Garantia do Zero</p>
+  </div>
+</section>
+
 <!-- CENÁRIOS -->
 <section class="sec-dark">
   <div class="section">
@@ -371,7 +381,7 @@ const CONFIG = {
   <div class="footer-links">
     <a href="#">Termos de Uso</a>
     <a href="#">Política de Privacidade</a>
-    <a href="#" id="footer-wa" style="color:var(--gold)">Contato</a>
+    <a href="mailto:contato@garantiasembarreiras.com" style="color:var(--gold)">Contato</a>
   </div>
 </footer>
 
@@ -385,7 +395,6 @@ const CONFIG = {
 document.getElementById('cta-main-btn').href = CONFIG.greennCheckoutURL;
 document.getElementById('mentoria-link').href = CONFIG.mentoriaURL;
 const waURL = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMsg)}`;
-document.getElementById('footer-wa').href = waURL;
 
 document.querySelector('.topbar .btn').addEventListener('click', function(e) {
   e.preventDefault();
