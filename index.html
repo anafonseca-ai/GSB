@@ -101,6 +101,46 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-fam
 .prog-cta:hover{background:var(--gold);color:var(--bg);border-color:var(--gold)}
 .prog-soon{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--text-d)}
 
+/* Events */
+.events-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.event{padding:36px 32px;background:var(--bg-el);border:1px solid var(--gold-b);position:relative;transition:all .4s var(--ease)}
+.event:hover{border-color:var(--gold-bh);box-shadow:0 12px 48px rgba(0,0,0,.3)}
+.event-date{display:flex;flex-direction:column;align-items:center;justify-content:center;width:64px;height:64px;background:var(--gold-s);border:1px solid var(--gold-b);margin-bottom:20px}
+.event-date .day{font-family:var(--serif);font-size:24px;font-weight:400;color:var(--gold);line-height:1}
+.event-date .month{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text-m)}
+.event-live{display:inline-block;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;border-radius:2px;font-weight:600;margin-bottom:12px}
+.event-live.upcoming{background:rgba(196,162,101,.12);color:var(--gold)}
+.event-live.past{background:rgba(120,112,104,.12);color:var(--text-m)}
+.event h3{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--white);margin-bottom:8px}
+.event p{font-size:13px;color:var(--text-s);line-height:1.75;margin-bottom:20px}
+.event-cta{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:500;padding:10px 20px;border:1px solid var(--gold-b);transition:all .3s;display:inline-block}
+.event-cta:hover{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+/* Market Intelligence */
+.intel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.intel-card{padding:32px 28px;background:var(--bg-el);border:1px solid var(--gold-b);text-align:center;transition:all .4s var(--ease)}
+.intel-card:hover{border-color:var(--gold-bh)}
+.intel-num{font-family:var(--serif);font-size:36px;font-weight:400;color:var(--gold);line-height:1;margin-bottom:6px}
+.intel-num small{font-size:18px;color:var(--gold-m)}
+.intel-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-m);margin-bottom:12px}
+.intel-desc{font-size:12px;color:var(--text-s);line-height:1.6}
+.intel-cta-bar{margin-top:32px;padding:28px 32px;background:var(--bg-el);border:1px solid var(--gold-b);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.intel-cta-bar p{font-size:14px;color:var(--text-s);flex:1}
+.intel-cta-bar p strong{color:var(--white)}
+/* Cases */
+.cases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.case-card{padding:32px 28px;background:var(--bg-el);border:1px solid var(--gold-b);transition:all .4s var(--ease)}
+.case-card:hover{border-color:var(--gold-bh);box-shadow:0 8px 36px rgba(0,0,0,.2)}
+.case-icon{font-size:28px;margin-bottom:16px}
+.case-card h4{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--white);margin-bottom:8px}
+.case-card p{font-size:13px;color:var(--text-s);line-height:1.75;margin-bottom:12px}
+.case-tag{display:inline-block;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:3px 10px;background:rgba(196,162,101,.1);color:var(--gold);border-radius:2px;margin-right:6px}
+/* Lead gate form */
+.gate-form{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.gate-input{flex:1;min-width:200px;padding:12px 16px;background:var(--bg-card);border:1px solid var(--gold-b);color:var(--text);font-family:var(--sans);font-size:13px;outline:none;transition:border .3s}
+.gate-input:focus{border-color:var(--gold)}
+.gate-input::placeholder{color:var(--text-d)}
+.gate-submit{padding:12px 28px;background:linear-gradient(135deg,var(--gold),var(--gold-d));color:var(--bg);font-family:var(--sans);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;border:none;cursor:pointer;transition:all .3s}
+.gate-submit:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(196,162,101,.25)}
 .cta-sec{text-align:center;padding:100px 48px;background:linear-gradient(180deg,var(--bg-alt),var(--bg));position:relative}
 .cta-sec::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:60px;background:linear-gradient(180deg,var(--gold-b),transparent)}
 .cta-sec .s-ey{justify-content:center}.cta-sec .s-ey::before{display:none}
@@ -121,7 +161,7 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-fam
 .reveal{opacity:0;transform:translateY(28px);transition:all .7s var(--ease)}.reveal.visible{opacity:1;transform:translateY(0)}
 .rv1{transition-delay:.12s}.rv2{transition-delay:.24s}
 
-@media(max-width:1024px){.hero-c{grid-template-columns:1fr;gap:48px;text-align:center}.hero-t{max-width:100%}.hero-d{margin-left:auto;margin-right:auto}.hero-ctas{justify-content:center}.hero::after{width:100%;clip-path:none;opacity:.4}.hero-img{width:300px;height:400px}.hero-ey{justify-content:center}.creds{grid-template-columns:repeat(2,1fr);margin:0 24px;margin-top:-30px}.pillars{grid-template-columns:1fr}.about-g{grid-template-columns:1fr;gap:48px}.about-iw{max-width:380px;margin:0 auto}.progs{grid-template-columns:1fr}.footer-in{grid-template-columns:1fr;gap:40px}}
+@media(max-width:1024px){.hero-c{grid-template-columns:1fr;gap:48px;text-align:center}.hero-t{max-width:100%}.hero-d{margin-left:auto;margin-right:auto}.hero-ctas{justify-content:center}.hero::after{width:100%;clip-path:none;opacity:.4}.hero-img{width:300px;height:400px}.hero-ey{justify-content:center}.creds{grid-template-columns:repeat(2,1fr);margin:0 24px;margin-top:-30px}.pillars{grid-template-columns:1fr}.about-g{grid-template-columns:1fr;gap:48px}.about-iw{max-width:380px;margin:0 auto}.progs{grid-template-columns:1fr}.events-grid{grid-template-columns:1fr}.intel-grid{grid-template-columns:1fr}.cases-grid{grid-template-columns:1fr}.intel-cta-bar{flex-direction:column;text-align:center}.footer-in{grid-template-columns:1fr;gap:40px}}
 @media(max-width:768px){.nav{padding:0 24px;height:64px}.nav-links{display:none}.nav-mob{display:block}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:64px;left:0;right:0;bottom:0;background:rgba(10,10,10,.98);padding:48px 24px;gap:24px;z-index:999}.hero{padding:100px 24px 60px;min-height:auto}.hero-img{width:260px;height:340px}.hero-acc,.hero-ln{display:none}.section{padding:80px 24px}.creds{grid-template-columns:1fr 1fr;margin:0 24px;margin-top:-24px}.cred{padding:28px 20px}.cred-n{font-size:32px}.footer{padding:48px 24px 32px}.footer-bot{flex-direction:column;gap:16px;text-align:center}.cta-sec{padding:80px 24px}}
 @media(max-width:480px){.hero h1{font-size:30px}.hero-ctas{flex-direction:column;align-items:stretch}.btn{width:100%;justify-content:center}.creds{grid-template-columns:1fr}}
 </style>
@@ -130,7 +170,7 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-fam
 <nav class="nav" id="nav">
   <a href="/" class="nav-brand"><img src="logo-gsb.jpg" alt="GSB"><span class="nav-brand-text">Garantia Sem Barreiras</span></a>
   <div class="nav-links" id="navLinks">
-    <a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#programas">Programas</a>
+    <a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#programas">Programas</a><a href="#inteligencia">Mercado</a><a href="#eventos">Eventos</a>
     <a href="#contato" class="nav-ct">Contato</a>
   </div>
   <button class="nav-mob" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -206,6 +246,105 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-fam
 </section>
 
 <section class="cta-sec" id="contato">
+
+<!-- ===== MARKET INTELLIGENCE ===== -->
+<section class="section" id="inteligencia">
+  <div class="container">
+    <div class="s-ey reveal">Inteligência de Mercado</div>
+    <h2 class="s-tt reveal">O mercado que você <em>ainda não enxerga</em></h2>
+    <p class="s-desc reveal">Dados exclusivos que revelam a dimensão real do Seguro Garantia no Brasil — e as oportunidades que a maioria dos corretores ignora.</p>
+    <div class="intel-grid">
+      <div class="intel-card reveal">
+        <div class="intel-num">R$ 6<small> tri</small></div>
+        <div class="intel-label">Contencioso Tributário</div>
+        <p class="intel-desc">Valor total do contencioso tributário brasileiro qualificado para operações de Seguro Garantia Judicial. Uma fração desse mercado já sustenta carreiras inteiras.</p>
+      </div>
+      <div class="intel-card reveal rv1">
+        <div class="intel-num">106<small> mil</small></div>
+        <div class="intel-label">Empresas em Dívida Ativa</div>
+        <p class="intel-desc">Empresas cadastradas na PGFN que podem necessitar de Seguro Garantia para garantir execuções fiscais. Cada uma é uma oportunidade de negócio.</p>
+      </div>
+      <div class="intel-card reveal rv2">
+        <div class="intel-num">10<small> mil+</small></div>
+        <div class="intel-label">Processos / Ano no TJSP</div>
+        <p class="intel-desc">Processos envolvendo seguro e corretagem com sentença no TJSP nos últimos 12 meses. Volume que exige profissionais preparados.</p>
+      </div>
+    </div>
+    <div class="intel-cta-bar reveal">
+      <p>Receba nosso <strong>Relatório Trimestral de Oportunidades</strong> com dados atualizados do mercado de Seguro Garantia, tendências jurisprudenciais e mapeamento de demanda por região.</p>
+      <div>
+        <form class="gate-form" onsubmit="event.preventDefault();fbq('track','Lead',{content_name:'Relatorio_Mercado'});gtag('event','generate_lead',{event_category:'intel_report'});this.querySelector('.gate-submit').textContent='Enviado ✓';this.querySelector('.gate-submit').style.background='#48bb78'">
+          <input type="email" class="gate-input" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="gate-submit">Receber relatório</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENTOS / WEBINARS ===== -->
+<section class="section section-alt" id="eventos">
+  <div class="container">
+    <div class="s-ey reveal">Eventos</div>
+    <h2 class="s-tt reveal">Próximos <em>encontros</em></h2>
+    <p class="s-desc reveal">Webinars, workshops e encontros ao vivo sobre Seguro Garantia. Conteúdo técnico de alto nível, direto com Ana Fonseca.</p>
+    <div class="events-grid">
+      <!-- [PLACEHOLDER: atualizar com evento real da próxima segunda] -->
+      <div class="event reveal">
+        <div class="event-date"><span class="day">24</span><span class="month">Fev</span></div>
+        <span class="event-live upcoming">Próximo evento</span>
+        <h3>Seguro Garantia Judicial — Oportunidades no Contencioso Tributário</h3>
+        <p>Como o contencioso tributário de R$ 6 trilhões gera oportunidades reais para corretores especializados. Dados exclusivos, cases práticos e estratégias de prospecção.</p>
+        <a href="https://wa.me/5511989419243?text=Ol%C3%A1!%20Quero%20participar%20do%20webinar%20sobre%20Seguro%20Garantia%20Judicial." class="event-cta" onclick="fbq('track','Schedule',{content_name:'Webinar_Tributario'});gtag('event','sign_up',{event_category:'webinar'})">Inscrever-se →</a>
+      </div>
+      <div class="event reveal rv1">
+        <div class="event-date"><span class="day">10</span><span class="month">Mar</span></div>
+        <span class="event-live upcoming">Em breve</span>
+        <h3>Masterclass — Do Zero à Primeira Apólice</h3>
+        <p>Workshop prático mostrando o caminho completo desde a qualificação técnica até a emissão da primeira apólice de Seguro Garantia. Ideal para corretores em início de jornada.</p>
+        <a href="https://wa.me/5511989419243?text=Ol%C3%A1!%20Quero%20participar%20da%20Masterclass%20Do%20Zero%20%C3%A0%20Primeira%20Ap%C3%B3lice." class="event-cta" onclick="fbq('track','Schedule',{content_name:'Masterclass_Zero'});gtag('event','sign_up',{event_category:'masterclass'})">Inscrever-se →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CASES + DICAS ===== -->
+<section class="section" id="cases">
+  <div class="container">
+    <div class="s-ey reveal">Cases & Insights</div>
+    <h2 class="s-tt reveal">O que nossos alunos <em>conquistam</em></h2>
+    <p class="s-desc reveal">Resultados reais de profissionais que passaram pelos nossos programas — e insights práticos para quem está começando.</p>
+    <div class="cases-grid">
+      <!-- [PLACEHOLDER: substituir por depoimentos reais quando Ana autorizar] -->
+      <div class="case-card reveal">
+        <div class="case-icon">📋</div>
+        <h4>Da carteira zero à especialização</h4>
+        <p>Corretor generalista que não conhecia Seguro Garantia concluiu o programa e emitiu sua primeira apólice em menos de 90 dias. Hoje o ramo representa 40% da sua receita.</p>
+        <span class="case-tag">Formação</span><span class="case-tag">GDZ</span>
+      </div>
+      <div class="case-card reveal rv1">
+        <div class="case-icon">🏛</div>
+        <h4>Entrada no mercado de licitações</h4>
+        <p>Profissional de outra área usou a mentoria para se posicionar como corretor especializado em garantias para licitações públicas. Primeiro contrato fechado em 120 dias.</p>
+        <span class="case-tag">Mentoria</span><span class="case-tag">Setor Público</span>
+      </div>
+      <div class="case-card reveal">
+        <div class="case-icon">💡</div>
+        <h4>Dica — O erro mais comum do corretor iniciante</h4>
+        <p>Tentar operar Seguro Garantia como se fosse auto ou vida. O produto é técnico, exige estudo de edital e análise financeira do tomador. Quem trata como commodity, perde o cliente.</p>
+        <span class="case-tag">Insight</span>
+      </div>
+      <div class="case-card reveal rv1">
+        <div class="case-icon">📊</div>
+        <h4>Dica — Por que o contencioso tributário é a maior oportunidade</h4>
+        <p>R$ 6 trilhões em disputa. Empresas precisam de seguro para garantir execuções fiscais. O corretor que domina esse nicho acessa um mercado que a maioria ignora.</p>
+        <span class="case-tag">Insight</span><span class="case-tag">Mercado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-sec" id="contato">
   <div class="container">
     <div class="s-ey">Próximo passo</div>
     <h2 class="s-tt">Pronto para dominar o <em>Seguro Garantia</em>?</h2>
@@ -220,7 +359,7 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-fam
 <footer class="footer">
   <div class="footer-in">
     <div><div class="footer-brand"><img src="logo-gsb.jpg" alt="GSB"><span class="footer-bt">Garantia Sem Barreiras</span></div><p class="footer-tl">Formação, mentoria e consultoria em Seguro Garantia. Construindo competência técnica e excelência profissional desde 1999.</p></div>
-    <div><div class="footer-hd">Programas</div><ul class="footer-lk"><li><a href="/zero">Garantia do Zero</a></li><li><a href="/mentoria">Mentoria Premium</a></li><li><a href="#programas">Gestão de Sinistro</a></li><li><a href="#contato">Consultoria</a></li></ul></div>
+    <div><div class="footer-hd">Programas</div><ul class="footer-lk"><li><a href="/zero">Garantia do Zero</a></li><li><a href="/mentoria">Mentoria Premium</a></li><li><a href="#programas">Gestão de Sinistro</a></li><li><a href="#inteligencia">Inteligência de Mercado</a></li><li><a href="#eventos">Eventos</a></li><li><a href="#contato">Consultoria</a></li></ul></div>
     <div><div class="footer-hd">Contato</div><ul class="footer-lk"><li><a href="mailto:ana.fonseca@garantiasembarreiras.com">ana.fonseca@garantiasembarreiras.com</a></li><li><a href="https://wa.me/5511989419243">WhatsApp</a></li><li><a href="https://www.instagram.com/anafonseca.garantia/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
   </div>
   <div class="footer-bot"><span class="footer-cp">© 2026 Garantia Sem Barreiras · Ana Fonseca. Todos os direitos reservados.</span><div class="footer-soc"><a href="https://www.instagram.com/anafonseca.garantia/" target="_blank" rel="noopener">Instagram</a></div></div>
