@@ -273,7 +273,7 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-fam
     <div class="intel-cta-bar reveal">
       <p>Receba nosso <strong>Relatório Trimestral de Oportunidades</strong> com dados atualizados do mercado de Seguro Garantia, tendências jurisprudenciais e mapeamento de demanda por região.</p>
       <div>
-        <form class="gate-form" onsubmit="event.preventDefault();fbq('track','Lead',{content_name:'Relatorio_Mercado'});gtag('event','generate_lead',{event_category:'intel_report'});this.querySelector('.gate-submit').textContent='Enviado ✓';this.querySelector('.gate-submit').style.background='#48bb78'">
+        <form class="gate-form" id="intelForm" onsubmit="event.preventDefault();const e=this.querySelector('input').value;const b=this.querySelector('.gate-submit');b.textContent='Enviando...';b.disabled=true;fetch('/api/subscribe',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:e})}).then(r=>{if(r.ok){b.textContent='Enviado ✓';b.style.background='#48bb78';fbq('track','Lead',{content_name:'Relatorio_Mercado'});gtag('event','generate_lead',{event_category:'intel_report'})}else{b.textContent='Erro — tente novamente';b.style.background='#ec4864';b.disabled=false}}).catch(()=>{b.textContent='Erro — tente novamente';b.style.background='#ec4864';b.disabled=false})">
           <input type="email" class="gate-input" placeholder="Seu melhor e-mail" required>
           <button type="submit" class="gate-submit">Receber relatório</button>
         </form>
