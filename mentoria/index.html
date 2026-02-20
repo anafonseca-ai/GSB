@@ -15,10 +15,10 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#f8f5f0;--bg-alt:#f2ede6;--card:#ffffff;--card-h:#fdfcfa;
-  --gold:#b8923a;--gold-l:#d4a853;--gold-d:#8a6e2a;--gold-soft:rgba(184,146,58,.06);--gold-mid:rgba(184,146,58,.15);
-  --dark:#1a1814;--text:#2a2520;--text-sec:#5a5248;--muted:#8a8078;--dim:#b0a898;
-  --border:rgba(184,146,58,.15);--border-strong:rgba(184,146,58,.3);
+  --bg:#080808;--bg-alt:#0c0b0a;--card:#121110;--card-h:#181614;
+  --rose:#d4a853;--rose-l:#e4c06a;--rose-d:#b08a38;--rose-soft:rgba(212,168,83,.08);--rose-mid:rgba(212,168,83,.15);
+  --white:#f5f0e8;--text:#ece6dc;--text-sec:#bab0a2;--muted:#8a7e70;--dim:#5a5048;
+  --border:rgba(212,168,83,.12);--border-strong:rgba(212,168,83,.22);
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:'DM Sans',system-ui,sans-serif;
 }
@@ -27,125 +27,125 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
-/* SUBTLE WARM GLOW — rosé pérola */
+/* AMBIENT GLOW — rosé-gold more present */
 body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;
   background:
-    radial-gradient(ellipse at 30% 10%,rgba(212,168,83,.04) 0%,transparent 45%),
-    radial-gradient(ellipse at 70% 90%,rgba(184,146,58,.03) 0%,transparent 45%);
+    radial-gradient(ellipse at 25% 15%,rgba(212,168,83,.06) 0%,transparent 50%),
+    radial-gradient(ellipse at 75% 85%,rgba(212,168,83,.04) 0%,transparent 50%),
+    radial-gradient(ellipse at 50% 50%,rgba(212,168,83,.02) 0%,transparent 70%);
   pointer-events:none;z-index:0}
 
-/* DECORATIVE GOLD LINE */
-body::after{content:'';position:fixed;top:0;left:60px;width:1px;height:100vh;
-  background:linear-gradient(180deg,transparent 0%,rgba(184,146,58,.06) 25%,rgba(184,146,58,.1) 50%,rgba(184,146,58,.06) 75%,transparent 100%);
+/* DECORATIVE LINE — thin gold line accent */
+body::after{content:'';position:fixed;top:0;right:80px;width:1px;height:100vh;
+  background:linear-gradient(180deg,transparent 0%,rgba(212,168,83,.08) 30%,rgba(212,168,83,.12) 50%,rgba(212,168,83,.08) 70%,transparent 100%);
   pointer-events:none;z-index:0}
 
 .section{max-width:780px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
-.badge{display:inline-block;padding:6px 20px;background:var(--gold-soft);border:1px solid var(--gold-mid);border-radius:24px;font-size:10px;color:var(--gold);letter-spacing:3px;font-weight:500;text-transform:uppercase}
-.btn{display:inline-block;padding:16px 44px;background:linear-gradient(135deg,var(--gold-l),var(--gold),var(--gold-d));color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer;transition:all .3s;box-shadow:0 4px 24px rgba(184,146,58,.2);font-family:var(--sans);text-align:center;letter-spacing:.5px}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 44px rgba(184,146,58,.3)}
+.badge{display:inline-block;padding:6px 20px;background:var(--rose-soft);border:1px solid var(--rose-mid);border-radius:24px;font-size:10px;color:var(--rose);letter-spacing:3px;font-weight:500;text-transform:uppercase}
+.btn{display:inline-block;padding:16px 44px;background:linear-gradient(135deg,var(--rose-l),var(--rose),var(--rose-d));color:#0a0a0a;border:none;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer;transition:all .3s;box-shadow:0 4px 28px rgba(212,168,83,.2);font-family:var(--sans);text-align:center;letter-spacing:.5px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 48px rgba(212,168,83,.3)}
 .btn-sm{padding:8px 24px;font-size:12px;letter-spacing:.8px}
 .btn-full{width:100%;display:block}
 
 /* TOPBAR */
-.topbar{position:sticky;top:0;z-index:100;background:rgba(248,245,240,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
-.topbar-logo{font-family:var(--serif);font-size:15px;letter-spacing:3px;color:var(--dark);font-weight:600}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(8,8,8,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.topbar-logo{font-family:var(--serif);font-size:15px;letter-spacing:3px;color:var(--rose);font-weight:500}
 .topbar-sub{font-family:var(--sans);font-size:9px;letter-spacing:2.5px;color:var(--muted);text-transform:uppercase;margin-left:12px;font-weight:400}
 
 /* HERO */
 .hero{position:relative;padding:130px 24px 110px;text-align:center;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;
   background:
-    radial-gradient(ellipse at 50% 20%,rgba(212,168,83,.05) 0%,transparent 40%),
-    radial-gradient(ellipse at 80% 70%,rgba(184,146,58,.03) 0%,transparent 35%);
+    radial-gradient(ellipse at 50% 0%,rgba(212,168,83,.07) 0%,transparent 45%),
+    radial-gradient(ellipse at 20% 80%,rgba(212,168,83,.03) 0%,transparent 40%),
+    radial-gradient(ellipse at 80% 60%,rgba(212,168,83,.03) 0%,transparent 40%);
   pointer-events:none}
-/* DECORATIVE TRIANGULAR ACCENT inspired by rosé-gold brush reference */
-.hero::after{content:'';position:absolute;top:50%;right:8%;width:200px;height:200px;
-  border:1px solid rgba(184,146,58,.08);transform:translateY(-50%) rotate(15deg);pointer-events:none}
 .hero-inner{position:relative;max-width:660px;margin:0 auto;z-index:1}
 .hero-brand{font-family:var(--serif);font-size:13px;letter-spacing:6px;color:var(--muted);text-transform:uppercase;font-weight:300;margin-bottom:28px}
-.hero h1{font-family:var(--serif);font-size:clamp(36px,6.5vw,56px);font-weight:400;line-height:1.12;color:var(--dark);margin:24px 0 0;font-style:italic}
-.hero h1 em{font-style:normal;background:linear-gradient(135deg,var(--gold-l),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero h1{font-family:var(--serif);font-size:clamp(36px,6.5vw,56px);font-weight:400;line-height:1.12;color:var(--white);margin:24px 0 0;font-style:italic}
+.hero h1 em{font-style:normal;background:linear-gradient(135deg,var(--rose-l),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero h1 .sub{display:block;font-family:var(--sans);font-size:clamp(14px,2.2vw,17px);font-weight:300;color:var(--text-sec);margin-top:20px;letter-spacing:.3px;font-style:normal;line-height:1.8}
 .hero-desc{font-size:14px;color:var(--muted);max-width:500px;margin:32px auto 0;line-height:1.9;font-weight:300}
 .hero-cta{margin-top:44px}
-.hero-divider{width:56px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:64px auto 0;opacity:.3}
+.hero-divider{width:56px;height:1px;background:linear-gradient(90deg,transparent,var(--rose),transparent);margin:64px auto 0;opacity:.4}
 
-.line-accent{display:block;width:32px;height:1px;background:var(--gold);margin:0 auto 20px;opacity:.4}
+/* LINE ACCENT */
+.line-accent{display:block;width:32px;height:1px;background:var(--rose);margin:0 auto 20px;opacity:.5}
 
 /* SECTIONS */
-.sec-warm{background:var(--bg-alt);padding:88px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative}
+.sec-dark{background:var(--bg-alt);padding:88px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative}
 .sec-light{padding:88px 24px;position:relative}
-.sec-title{font-family:var(--serif);font-size:30px;font-weight:400;margin:0 0 6px;color:var(--dark);font-style:italic}
+.sec-title{font-family:var(--serif);font-size:30px;font-weight:400;margin:0 0 6px;color:var(--white);font-style:italic}
 .sec-subtitle{font-size:12px;color:var(--muted);margin:12px 0 0;font-weight:300;letter-spacing:.5px}
 
 /* PILLAR CARDS */
 .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:680px;margin:48px auto 0}
-.pillar{padding:32px 22px;background:var(--card);border:1px solid var(--border);border-radius:12px;text-align:center;transition:all .3s;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.03)}
-.pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(184,146,58,.2),transparent);opacity:0;transition:opacity .3s}
-.pillar:hover{border-color:var(--border-strong);box-shadow:0 8px 28px rgba(0,0,0,.06)}
+.pillar{padding:32px 22px;background:var(--card);border:1px solid var(--border);border-radius:12px;text-align:center;transition:all .3s;position:relative;overflow:hidden}
+.pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,168,83,.2),transparent);opacity:0;transition:opacity .3s}
+.pillar:hover{border-color:var(--border-strong)}
 .pillar:hover::before{opacity:1}
 .pillar-icon{width:40px;height:40px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center}
-.pillar-icon svg{width:28px;height:28px;stroke:var(--gold);stroke-width:1.5;fill:none}
-.pillar h3{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--dark);margin-bottom:8px;font-style:italic}
+.pillar-icon svg{width:28px;height:28px;stroke:var(--rose);stroke-width:1.5;fill:none}
+.pillar h3{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--white);margin-bottom:8px;font-style:italic}
 .pillar p{font-size:12px;color:var(--muted);line-height:1.6;font-weight:300}
 
 /* ABOUT */
 .about-wrap{display:grid;grid-template-columns:280px 1fr;gap:52px;align-items:center}
-.about-img{width:280px;height:360px;border-radius:12px;overflow:hidden;background:var(--bg-alt);border:1px solid var(--border);position:relative;box-shadow:0 20px 60px rgba(0,0,0,.08)}
-.about-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(248,245,240,.3) 100%)}
+.about-img{width:280px;height:360px;border-radius:12px;overflow:hidden;background:var(--card);border:1px solid var(--border);position:relative;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.about-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(8,8,8,.5) 100%)}
 .about-img img{width:100%;height:100%;object-fit:cover;object-position:top}
-.about-name{font-family:var(--serif);font-size:28px;font-weight:400;color:var(--dark);margin:16px 0 4px;font-style:italic}
-.about-role{font-size:10px;color:var(--gold);letter-spacing:2.5px;font-weight:500;text-transform:uppercase;margin-bottom:22px}
+.about-name{font-family:var(--serif);font-size:28px;font-weight:400;color:var(--white);margin:16px 0 4px;font-style:italic}
+.about-role{font-size:10px;color:var(--rose);letter-spacing:2.5px;font-weight:500;text-transform:uppercase;margin-bottom:22px}
 .about-text{font-size:14px;color:var(--text-sec);line-height:1.85;font-weight:300;margin-bottom:14px}
 .about-text-sm{font-size:13px;color:var(--muted);line-height:1.75;font-weight:300}
 
 /* QUIZ */
 .quiz-section{padding:88px 24px;position:relative;background:var(--bg-alt);border-top:1px solid var(--border)}
-.quiz-section::before{content:'';position:absolute;top:50%;left:50%;width:400px;height:400px;
-  background:radial-gradient(circle,rgba(184,146,58,.03) 0%,transparent 70%);
+.quiz-section::before{content:'';position:absolute;top:50%;left:50%;width:500px;height:500px;
+  background:radial-gradient(circle,rgba(212,168,83,.04) 0%,transparent 70%);
   transform:translate(-50%,-50%);pointer-events:none}
 .quiz-wrap{max-width:540px;margin:0 auto;position:relative;z-index:1}
-.quiz-box{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:44px 36px;position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.04)}
-.quiz-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 5%,var(--gold) 50%,transparent 95%);opacity:.25}
+.quiz-box{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:44px 36px;position:relative;overflow:hidden}
+.quiz-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 5%,var(--rose) 50%,transparent 95%);opacity:.3}
 .quiz-progress{margin-bottom:36px}
-.quiz-progress-bar{height:2px;background:rgba(184,146,58,.1);border-radius:2px;margin-top:8px;overflow:hidden}
-.quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--gold-d),var(--gold),var(--gold-l));border-radius:2px;transition:width .4s ease}
-.quiz-q{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--dark);margin-bottom:28px;line-height:1.4;font-style:italic}
+.quiz-progress-bar{height:2px;background:rgba(212,168,83,.08);border-radius:2px;margin-top:8px;overflow:hidden}
+.quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--rose-d),var(--rose),var(--rose-l));border-radius:2px;transition:width .4s ease}
+.quiz-q{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--white);margin-bottom:28px;line-height:1.4;font-style:italic}
 .quiz-opts{display:flex;flex-direction:column;gap:10px}
-.quiz-opt{width:100%;padding:16px 22px;background:rgba(184,146,58,.02);border:1px solid rgba(184,146,58,.12);border-radius:10px;color:var(--text-sec);font-size:14px;font-weight:400;cursor:pointer;transition:all .25s;text-align:left;font-family:var(--sans);line-height:1.55}
-.quiz-opt:hover{background:rgba(184,146,58,.06);border-color:rgba(184,146,58,.3);color:var(--dark)}
+.quiz-opt{width:100%;padding:16px 22px;background:rgba(212,168,83,.03);border:1px solid rgba(212,168,83,.1);border-radius:10px;color:var(--text-sec);font-size:14px;font-weight:400;cursor:pointer;transition:all .25s;text-align:left;font-family:var(--sans);line-height:1.55}
+.quiz-opt:hover{background:rgba(212,168,83,.08);border-color:rgba(212,168,83,.3);color:var(--white)}
 .quiz-back{background:none;border:none;color:var(--muted);font-size:12px;cursor:pointer;margin-top:20px;font-family:var(--sans);letter-spacing:.5px;transition:color .2s}
-.quiz-back:hover{color:var(--gold)}
+.quiz-back:hover{color:var(--rose)}
 
 .quiz-form{display:flex;flex-direction:column;gap:16px}
-.quiz-input{width:100%;padding:14px 20px;background:rgba(184,146,58,.02);border:1px solid rgba(184,146,58,.12);border-radius:10px;color:var(--dark);font-size:14px;font-family:var(--sans);outline:none;transition:border-color .2s}
-.quiz-input:focus{border-color:rgba(184,146,58,.4)}
+.quiz-input{width:100%;padding:14px 20px;background:rgba(212,168,83,.03);border:1px solid rgba(212,168,83,.1);border-radius:10px;color:var(--white);font-size:14px;font-family:var(--sans);outline:none;transition:border-color .2s}
+.quiz-input:focus{border-color:rgba(212,168,83,.4)}
 .quiz-input::placeholder{color:var(--dim)}
-.quiz-submit{padding:16px;background:linear-gradient(135deg,var(--gold-l),var(--gold),var(--gold-d));color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--sans);transition:all .3s;letter-spacing:.3px}
-.quiz-submit:hover{box-shadow:0 8px 36px rgba(184,146,58,.25)}
+.quiz-submit{padding:16px;background:linear-gradient(135deg,var(--rose-l),var(--rose),var(--rose-d));color:#0a0a0a;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--sans);transition:all .3s;letter-spacing:.3px}
+.quiz-submit:hover{box-shadow:0 8px 36px rgba(212,168,83,.3)}
 .quiz-submit:disabled{opacity:.5;cursor:not-allowed}
 
 .result-box{text-align:center;padding:48px 32px}
 .result-icon{width:48px;height:48px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center}
-.result-icon svg{width:40px;height:40px;stroke:var(--gold);stroke-width:1.5;fill:none}
-.result-title{font-family:var(--serif);font-size:24px;color:var(--dark);margin-bottom:14px;font-style:italic}
+.result-icon svg{width:40px;height:40px;stroke:var(--rose);stroke-width:1.5;fill:none}
+.result-title{font-family:var(--serif);font-size:24px;color:var(--white);margin-bottom:14px;font-style:italic}
 .result-desc{font-size:14px;color:var(--text-sec);line-height:1.75;margin-bottom:36px;font-weight:300}
 
 /* FOOTER */
-.footer{padding:56px 24px;border-top:1px solid var(--border);text-align:center;position:relative;z-index:1;background:var(--dark)}
-.footer-brand{font-family:var(--serif);font-size:14px;letter-spacing:4px;color:var(--gold-l);font-weight:400;margin-bottom:4px;font-style:italic}
-.footer-sub{font-size:9px;letter-spacing:2.5px;color:rgba(255,255,255,.3);text-transform:uppercase;margin-bottom:12px;font-weight:400}
-.footer-copy{font-size:11px;color:rgba(255,255,255,.25);font-weight:300}
+.footer{padding:56px 24px;border-top:1px solid var(--border);text-align:center;position:relative;z-index:1}
+.footer-brand{font-family:var(--serif);font-size:14px;letter-spacing:4px;color:var(--rose);font-weight:400;margin-bottom:4px;font-style:italic}
+.footer-sub{font-size:9px;letter-spacing:2.5px;color:var(--dim);text-transform:uppercase;margin-bottom:12px;font-weight:400}
+.footer-copy{font-size:11px;color:var(--dim);font-weight:300}
 .footer-links{display:flex;justify-content:center;gap:24px;margin-top:16px}
-.footer-links a{font-size:11px;color:rgba(255,255,255,.3);font-weight:400;transition:color .2s}
-.footer-links a:hover{color:var(--gold-l)}
+.footer-links a{font-size:11px;color:var(--dim);font-weight:400;transition:color .2s}
+.footer-links a:hover{color:var(--rose)}
 
-.spinner{display:inline-block;width:20px;height:20px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .6s linear infinite}
+.spinner{display:inline-block;width:20px;height:20px;border:2px solid rgba(10,10,10,.3);border-top-color:#0a0a0a;border-radius:50%;animation:spin .6s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 @media(max-width:700px){
   .hero{padding:80px 16px 64px}
-  .sec-warm,.sec-light,.quiz-section{padding:60px 16px}
+  .sec-dark,.sec-light,.quiz-section{padding:60px 16px}
   .pillar-grid{grid-template-columns:1fr}
   .about-wrap{grid-template-columns:1fr;text-align:center}
   .about-img{width:220px;height:280px;margin:0 auto}
@@ -153,7 +153,6 @@ body::after{content:'';position:fixed;top:0;left:60px;width:1px;height:100vh;
   .topbar{padding:12px 16px}
   .topbar-sub{display:none}
   body::after{display:none}
-  .hero::after{display:none}
 }
 </style>
 </head>
@@ -188,7 +187,7 @@ body::after{content:'';position:fixed;top:0;left:60px;width:1px;height:100vh;
 </section>
 
 <!-- O QUE É -->
-<section class="sec-warm">
+<section class="sec-dark">
   <div class="section">
     <div style="text-align:center;margin-bottom:44px">
       <div class="line-accent"></div>
@@ -225,7 +224,7 @@ body::after{content:'';position:fixed;top:0;left:60px;width:1px;height:100vh;
   <div class="section">
     <div class="about-wrap">
       <div class="about-img">
-        <img src="/mentoria/ana-perfil.jpg" alt="Ana Fonseca — Especialista em Seguro Garantia" loading="lazy" width="280" height="360">
+        <img src="/mentoria/ana-autoridade.jpg" alt="Ana Fonseca — Especialista em Seguro Garantia" loading="lazy" width="280" height="360">
       </div>
       <div>
         <span class="badge">Sua mentora</span>
@@ -263,25 +262,68 @@ body::after{content:'';position:fixed;top:0;left:60px;width:1px;height:100vh;
     <a href="/">Hub GSB</a>
     <a href="/zero">Garantia do Zero</a>
     <a href="/sinistro">Sinistro Garantido</a>
-    <a href="https://wa.me/5511989419243" style="color:var(--gold-l)">Contato</a>
+    <a href="https://wa.me/5511989419243" style="color:var(--rose)">Contato</a>
   </div>
 </footer>
 
 <script>
-const SVG_TARGET='<svg viewBox="0 0 24 24" width="40" height="40" stroke="#b8923a" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>';
-const SVG_BOOK='<svg viewBox="0 0 24 24" width="40" height="40" stroke="#b8923a" stroke-width="1.5" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="14" y2="11"/></svg>';
+// SVG ICONS for results (replacing emojis)
+const SVG_TARGET='<svg viewBox="0 0 24 24" width="40" height="40" stroke="#d4a853" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>';
+const SVG_BOOK='<svg viewBox="0 0 24 24" width="40" height="40" stroke="#d4a853" stroke-width="1.5" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="14" y2="11"/></svg>';
+const SVG_PATH='<svg viewBox="0 0 24 24" width="40" height="40" stroke="#d4a853" stroke-width="1.5" fill="none"><path d="M18 6L6 18"/><path d="M6 6l12 12"/><circle cx="12" cy="12" r="10"/></svg>';
 
 const QUESTIONS = [
-  {key:"atuacao",label:"Atuação no mercado",q:"Como você atua hoje no mercado de seguros?",
-    opts:[{text:"Corretor(a) com SUSEP, tenho minha própria operação",val:1.0},{text:"Corretor(a) com SUSEP, atuo dentro de uma corretora",val:0.9},{text:"Preposto(a) vinculado a uma corretora",val:0.7},{text:"Trabalho em área relacionada (seguradora, jurídico…)",val:0.3},{text:"Ainda não atuo no mercado de seguros",val:0.1}],peso:0.15},
-  {key:"experiencia_sg",label:"Experiência com SG",q:"Qual é sua experiência com Seguro Garantia?",
-    opts:[{text:"Já emito apólices e tenho carteira ativa",val:1.0},{text:"Já emiti algumas, mas sem recorrência",val:0.7},{text:"Conheço o produto, tentei operar mas não avancei",val:0.4},{text:"Sei que existe, mas nunca trabalhei com ele",val:0.2}],peso:0.15},
-  {key:"motivacao",label:"Motivação",q:"O que mais te incomoda na sua operação hoje?",
-    opts:[{text:"Perco negócios por não dominar Seguro Garantia",val:1.0},{text:"Dependo de poucos ramos e o ticket médio é baixo",val:0.9},{text:"Tenho potencial mas não consigo escalar sem método",val:0.8},{text:"Sinto que estou ficando para trás no mercado",val:0.6},{text:"Estou só explorando opções por enquanto",val:0.1}],peso:0.20},
-  {key:"investimento",label:"Capacidade de investimento",q:"Se tivesse acesso a um método comprovado e mentoria direta, como encararia o investimento?",
-    opts:[{text:"Começaria imediatamente — é isso que estou buscando",val:1.0},{text:"Avaliaria com seriedade, estou pronto para investir no meu crescimento",val:0.85},{text:"Dependeria do valor e das condições",val:0.4},{text:"Prefiro opções de baixo custo neste momento",val:0.1}],peso:0.30},
-  {key:"janela",label:"Janela de início",q:"Quando gostaria de começar?",
-    opts:[{text:"Nas próximas semanas",val:1.0},{text:"Nos próximos 2 a 3 meses",val:0.6},{text:"Sem prazo definido, estou avaliando",val:0.2}],peso:0.20}
+  {
+    key:"atuacao",label:"Atuação no mercado",
+    q:"Como você atua hoje no mercado de seguros?",
+    opts:[
+      {text:"Corretor(a) com SUSEP, tenho minha própria operação",val:1.0},
+      {text:"Corretor(a) com SUSEP, atuo dentro de uma corretora",val:0.9},
+      {text:"Preposto(a) vinculado a uma corretora",val:0.7},
+      {text:"Trabalho em área relacionada (seguradora, jurídico…)",val:0.3},
+      {text:"Ainda não atuo no mercado de seguros",val:0.1}
+    ],peso:0.15
+  },
+  {
+    key:"experiencia_sg",label:"Experiência com SG",
+    q:"Qual é sua experiência com Seguro Garantia?",
+    opts:[
+      {text:"Já emito apólices e tenho carteira ativa",val:1.0},
+      {text:"Já emiti algumas, mas sem recorrência",val:0.7},
+      {text:"Conheço o produto, tentei operar mas não avancei",val:0.4},
+      {text:"Sei que existe, mas nunca trabalhei com ele",val:0.2}
+    ],peso:0.15
+  },
+  {
+    key:"motivacao",label:"Motivação",
+    q:"O que mais te incomoda na sua operação hoje?",
+    opts:[
+      {text:"Perco negócios por não dominar Seguro Garantia",val:1.0},
+      {text:"Dependo de poucos ramos e o ticket médio é baixo",val:0.9},
+      {text:"Tenho potencial mas não consigo escalar sem método",val:0.8},
+      {text:"Sinto que estou ficando para trás no mercado",val:0.6},
+      {text:"Estou só explorando opções por enquanto",val:0.1}
+    ],peso:0.20
+  },
+  {
+    key:"investimento",label:"Capacidade de investimento",
+    q:"Se tivesse acesso a um método comprovado e mentoria direta, como encararia o investimento?",
+    opts:[
+      {text:"Começaria imediatamente — é isso que estou buscando",val:1.0},
+      {text:"Avaliaria com seriedade, estou pronto para investir no meu crescimento",val:0.85},
+      {text:"Dependeria do valor e das condições",val:0.4},
+      {text:"Prefiro opções de baixo custo neste momento",val:0.1}
+    ],peso:0.30
+  },
+  {
+    key:"janela",label:"Janela de início",
+    q:"Quando gostaria de começar?",
+    opts:[
+      {text:"Nas próximas semanas",val:1.0},
+      {text:"Nos próximos 2 a 3 meses",val:0.6},
+      {text:"Sem prazo definido, estou avaliando",val:0.2}
+    ],peso:0.20
+  }
 ];
 
 const CALENDAR_URL="https://calendar.google.com/calendar/appointments/schedules/";
@@ -289,24 +331,60 @@ const GDZ_URL="/zero";
 const API_URL="/api/quiz";
 
 let step=0,answers={},scores={};
+
 function init(){step=0;answers={};scores={};renderQuestion()}
 
 function renderQuestion(){
-  const q=QUESTIONS[step],pct=Math.round((step/QUESTIONS.length)*100);
-  const c=document.getElementById('quizContainer');c.className='quiz-box';
-  let html=`<div class="quiz-progress"><div style="display:flex;justify-content:space-between"><span style="font-size:11px;color:var(--muted);letter-spacing:.5px">Pergunta ${step+1} de ${QUESTIONS.length}</span><span style="font-size:11px;color:var(--gold)">${pct}%</span></div><div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${pct}%"></div></div></div><div class="quiz-q">${q.q}</div><div class="quiz-opts">`;
+  const q=QUESTIONS[step];
+  const pct=Math.round((step/QUESTIONS.length)*100);
+  const c=document.getElementById('quizContainer');
+  c.className='quiz-box';
+  let html=`
+    <div class="quiz-progress">
+      <div style="display:flex;justify-content:space-between">
+        <span style="font-size:11px;color:var(--muted);letter-spacing:.5px">Pergunta ${step+1} de ${QUESTIONS.length}</span>
+        <span style="font-size:11px;color:var(--rose)">${pct}%</span>
+      </div>
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:${pct}%"></div></div>
+    </div>
+    <div class="quiz-q">${q.q}</div>
+    <div class="quiz-opts">`;
   q.opts.forEach((opt,i)=>{html+=`<button class="quiz-opt" onclick="answer(${step},${i})">${opt.text}</button>`});
-  html+=`</div>`;if(step>0)html+=`<button class="quiz-back" onclick="goBack()">&larr; Voltar</button>`;
+  html+=`</div>`;
+  if(step>0) html+=`<button class="quiz-back" onclick="goBack()">&larr; Voltar</button>`;
   c.innerHTML=html;
 }
-function answer(qIdx,optIdx){const q=QUESTIONS[qIdx],opt=q.opts[optIdx];answers[q.label]=opt.text;scores[q.key]=opt.val*q.peso;if(step<QUESTIONS.length-1){step++;renderQuestion()}else{renderContact()}}
-function goBack(){if(step>0){step--;renderQuestion()}}
-function renderContact(){
-  const c=document.getElementById('quizContainer');c.className='quiz-box';
-  c.innerHTML=`<div class="quiz-progress"><div style="display:flex;justify-content:space-between"><span style="font-size:11px;color:var(--muted)">Último passo</span><span style="font-size:11px;color:var(--gold)">100%</span></div><div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:100%"></div></div></div><div class="quiz-q">Para preparar seu diagnóstico personalizado, precisamos de seus dados</div><div class="quiz-form"><input class="quiz-input" id="qNome" type="text" placeholder="Seu nome completo" required><input class="quiz-input" id="qEmail" type="email" placeholder="Seu melhor e-mail" required><input class="quiz-input" id="qWhatsapp" type="tel" placeholder="WhatsApp com DDD" required><button class="quiz-submit" id="qSubmit" onclick="submitQuiz()">Receber Diagnóstico</button></div><button class="quiz-back" onclick="step=${QUESTIONS.length-1};renderQuestion()">&larr; Voltar</button>`;
+
+function answer(qIdx,optIdx){
+  const q=QUESTIONS[qIdx],opt=q.opts[optIdx];
+  answers[q.label]=opt.text;
+  scores[q.key]=opt.val*q.peso;
+  if(step<QUESTIONS.length-1){step++;renderQuestion()}else{renderContact()}
 }
+
+function goBack(){if(step>0){step--;renderQuestion()}}
+
+function renderContact(){
+  const c=document.getElementById('quizContainer');
+  c.className='quiz-box';
+  c.innerHTML=`
+    <div class="quiz-progress">
+      <div style="display:flex;justify-content:space-between"><span style="font-size:11px;color:var(--muted)">Último passo</span><span style="font-size:11px;color:var(--rose)">100%</span></div>
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:100%"></div></div>
+    </div>
+    <div class="quiz-q">Para preparar seu diagnóstico personalizado, precisamos de seus dados</div>
+    <div class="quiz-form">
+      <input class="quiz-input" id="qNome" type="text" placeholder="Seu nome completo" required>
+      <input class="quiz-input" id="qEmail" type="email" placeholder="Seu melhor e-mail" required>
+      <input class="quiz-input" id="qWhatsapp" type="tel" placeholder="WhatsApp com DDD" required>
+      <button class="quiz-submit" id="qSubmit" onclick="submitQuiz()">Receber Diagnóstico</button>
+    </div>
+    <button class="quiz-back" onclick="step=${QUESTIONS.length-1};renderQuestion()">&larr; Voltar</button>`;
+}
+
 function calcScore(){return Math.round(Object.values(scores).reduce((a,b)=>a+b,0)*100)}
 function getRoute(s){return s>=65?'A':s>=40?'B':'C'}
+
 async function submitQuiz(){
   const nome=document.getElementById('qNome').value.trim(),email=document.getElementById('qEmail').value.trim(),whatsapp=document.getElementById('qWhatsapp').value.trim();
   if(!nome||!email||!whatsapp){alert('Por favor, preencha todos os campos.');return}
@@ -317,8 +395,10 @@ async function submitQuiz(){
   gtag('event','quiz_complete',{event_category:'mentoria',event_label:rota,value:score});
   renderResult(rota,nome,score);
 }
+
 function renderResult(rota,nome,score){
-  const c=document.getElementById('quizContainer'),fn=nome.split(' ')[0];
+  const c=document.getElementById('quizContainer');
+  const fn=nome.split(' ')[0];
   if(rota==='A'){
     c.className='quiz-box';c.innerHTML=`<div class="result-box"><div class="result-icon">${SVG_TARGET}</div><div class="result-title">${fn}, seu perfil é compatível com a mentoria</div><p class="result-desc">Com base nas suas respostas, identificamos que você tem o momento e a disposição para aproveitar ao máximo o programa. O próximo passo é uma conversa diagnóstica de 30 minutos com Ana Fonseca.</p><a href="${CALENDAR_URL}" target="_blank" class="btn btn-full" style="margin-bottom:12px" onclick="fbq('track','Schedule',{content_name:'md_quiz'})">Agendar Conversa com Ana</a><p style="font-size:10px;color:var(--muted);margin-top:8px;letter-spacing:.5px">Terças e quintas &middot; 14h às 16h30 &middot; 30 min</p></div>`;
   }else if(rota==='B'){
